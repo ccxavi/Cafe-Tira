@@ -1,0 +1,118 @@
+.navbar {
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  background-color: var(--layout-bg);
+  position: fixed;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  background-image: url(../assets/images/logo.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  width: 120px;
+  height: 50px;
+}
+
+.nav-links {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-size: 15px;
+  font-weight: normal;
+  padding: 1rem;
+  /* padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 35px; */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--green);
+}
+
+.search-button {
+  display: flex;
+  border: 2px solid black;
+  margin-right: 2.5rem;
+}
+
+.search input {
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  /* background-color: var(--color-bg-secondary);
+  border: 8px solid var(--color-bg-primary);
+  outline: 1px solid var(--color-bg-tertiary); */
+  padding: 1rem;
+  border-radius: 5px;
+
+  width: 360px;
+}
+
+.dropdown-menu h3 {
+  font-weight: 500;
+  font-size: 12px;
+  color: #63666d;
+  padding-bottom: 14px;
+
+  text-indent: 5px;
+}
+
+.dropdown-menu ul {
+  padding: 0;
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  visibility: visible;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  display: block;
+}
+
+.dropdown-menu li a p {
+  font-size: 0.8rem;
+}
+
+.dropdown-menu li a p:last-child {
+  font-weight: 500;
+  font-size: 12px;
+  color: #63666d;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--color-bg-quaternary);
+}

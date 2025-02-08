@@ -1,0 +1,26 @@
+.about {
+  width: 100%;
+  border: 2px solid red;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-text {
+  border: 2px solid red;
+  width: 50%;
+}
+
+.about-logo {
+  border: 2px solid red;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .about-logo img {
+  width: 200px;
+  height: 100px;
+} */

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+html {
+  background-image: var(--bgcolor);
+  /* height: 100vh; */
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --smoky-black: #29221a;
+  --smoky-black-2: #040404;
+  --bistre: #372a1aff;
+  --black: #030303ff;
+  --smoky-black-3: #201b15;
+  --chamoisee: #9e7148ff;
+  --bgcolor: linear-gradient(
+    135deg,
+    var(--smoky-black) 25%,
+    var(--smoky-black-3) 100%,
+    var(--smoky-black-2) 75%
+  );
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  /* background-image: var(--bgcolor); */
+
+  /* background: var(--purple); */
+  /* background-size: 100%; */
+  /* background-image: var(--bgcolor);
+    background-position: center; */
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* background-color: var(--smoky-black-2);
+    background-image: var(--bgcolor);
+    background-size: cover;
+    background-repeat: ; */
+}
+
+.layout {
+  /* background-color: var(--smoky-black-2);
+  background-image: var(--bgcolor); */
+  background-position: center;
+  background-size: contain;
+  /* border: 5px solid yellow; */
+  /* max-width: 1440px; */
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  line-height: 1.5rem;
+  gap: 2rem;
+}
+
+header {
+  background-color: var(--bgcolor);
+  filter: blur(2);
+  width: 100%;
+  /* max-width: 1440px; */
+  margin: auto;
+  /* border: 1px solid black; */
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  max-width: 1440px;
+}
