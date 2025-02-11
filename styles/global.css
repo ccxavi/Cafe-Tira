@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: white;
+  scroll-behavior: smooth;
 }
 
 html {
   background-image: var(--bgcolor);
-  /* height: 100vh; */
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+}
+
+p,
+a {
+  color: var(--p-color);
 }
 
 :root {
@@ -24,41 +36,29 @@ html {
   --chamoisee: #9e7148ff;
   --bgcolor: linear-gradient(
     135deg,
-    var(--smoky-black) 25%,
-    var(--smoky-black-3) 100%,
-    var(--smoky-black-2) 75%
+    var(--smoky-black) 10%,
+    var(--smoky-black-2) 65%,
+    var(--smoky-black-3) 75%
   );
+  --menu-container: #1f1a15;
+  --heading-color: #ead7b7;
+  --p-color: #c8a67e;
 }
 
 body {
   width: 100%;
   max-width: 1440px;
   margin: auto;
-  /* background-image: var(--bgcolor); */
-
-  /* background: var(--purple); */
-  /* background-size: 100%; */
-  /* background-image: var(--bgcolor);
-    background-position: center; */
   display: flex;
   gap: 2rem;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid red; */
-  /* background-color: var(--smoky-black-2);
-    background-image: var(--bgcolor);
-    background-size: cover;
-    background-repeat: ; */
 }
 
 .layout {
-  /* background-color: var(--smoky-black-2);
-  background-image: var(--bgcolor); */
   background-position: center;
   background-size: contain;
-  /* border: 5px solid yellow; */
-  /* max-width: 1440px; */
-  width: 80%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -71,12 +71,9 @@ body {
 
 header {
   background-color: var(--bgcolor);
-  filter: blur(2);
   width: 100%;
-  /* max-width: 1440px; */
   margin: auto;
-  /* border: 1px solid black; */
-  padding: 2rem 0 2rem 0;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,4 +81,14 @@ header {
 
 div {
   max-width: 1440px;
+}
+
+.layout button {
+  background-color: var(--smoky-black);
+  border: 2px solid var(--chamoisee);
+  border-radius: 0.5rem;
+}
+
+.layout button:hover {
+  opacity: 0.8;
 }
